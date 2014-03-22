@@ -99,14 +99,15 @@ figcaption {
 
 
 footer {
-    background-color: #5cb0ff;
+    background-color: #999999;
     clear: both;
     color: #ffffff;
 }
 
 footer ul {
-    list-style-type: none;
+    list-style-type: square;
 }
+footer li { color: #000000; }
 
 .wrapper {
     margin: 0 auto;
@@ -119,7 +120,7 @@ footer ul {
 }
 
 .third {
-    float: left;
+    float: right;
     padding-right: 2%; 
     width: 32%;
 }
