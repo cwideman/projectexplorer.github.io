@@ -10,6 +10,7 @@ body {
     font: 16px/24px 'Roboto Slab', serif;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
 }
@@ -17,6 +18,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     line-height: 48px;
 }
+h1 
+{ color: #ff9999 }  /* H1 elements with class~=pastoral */
 
 h2 {
     font-size: 24px;
@@ -24,10 +27,14 @@ h2 {
     margin-bottom: 8px;
 }
 
+h2 
+{color: #ff6666 } /*H2 elements with class~=pink pastoral */
 
 p {
     margin-bottom: 24px;
 }
+p { line-height: 4.3} /* adjusted adjacent the graf line-height */
+
 
 img {
     width: 100%;
@@ -43,8 +50,8 @@ nav a {
     display: inline-block;
     font: 18px/24px 'Oswald', sans-serif;
     padding: 10px;
-    text-decoration: none;
-}
+    text-decoration: overline;
+} /* text decoration overline insert */
 
 nav a:hover {
     border-bottom: 4px solid #5cb0ff;
@@ -65,22 +72,24 @@ article h2 {
 aside h3 {
     font-size: 14px;
     margin-bottom: 4px;
-    margin-top: 32px;   
-}
+    margin-top: 32px; 
+    background:#ffcc99;
+} /* added first-child background-color */
 
-aside h3:first-child {
+aside h3:first-child { background: #ffcc99; } /* added first-child background-color */
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
 aside ul {
     font-size: 12px;
-    list-style-type: none;
-}
+    list-style-type: square; 
+    
+} /* added a square list-style type for child selectors */
 
 aside a {
-    color: #5cb0ff;
-    text-decoration: none;
+    color: #99ffcc;
+    text-decoration: overline;
 }
 
 aside a:after {
@@ -107,7 +116,8 @@ footer {
 footer ul {
     list-style-type: square;
 }
-footer li { color: #000000; }
+footer li { color: #99ffcc; 
+text-decoration: overline;} /* added an over-line decoration */
 
 .wrapper {
     margin: 0 auto;
